@@ -19,12 +19,24 @@
         }    
         .outer{
             background-color: brown;
+            margin-bottom: 200px;
            
            }
           .inner{
               background-color: cyan;
               transform:rotate(54deg) scale(0.8);
           } 
+          .transition{
+              text-align: center;
+              height: 200px;
+              width: 200px;
+              background-color: rgb(240, 114, 139);
+              transition:  width  3s ease 0s,background-color 3s ease 0s;
+             }
+          .transition:hover{
+            background-color: crimson;
+              width: 500px;
+          }
     </style>
 </head>
 <body>
@@ -41,6 +53,9 @@
     </div>
     <div class="box outer">
         <div class="box inner">box-3</div>
+    </div>
+    <div class="transition">
+        transition test
     </div>
 </body>
 </html>
